@@ -69,5 +69,42 @@
         }
       })
     </script>
+    <hr><br><br>
+    <div id="app-4">
+      <form action="done.html" @submit.prevent="handleIt">
+        <button type="submit" @click="doSomething">Submit Me!</button>
+      </form>
+    </div>
+    <script>
+      new Vue({
+        el: '#app-4',
+        methods: {
+          handleIt: function () {
+            alert('Handled!');
+          }
+        }
+      })
+    </script>
+    <hr><br><br>
+
+    <div id="app-5">
+      <button type="submit" @click="updateCount">
+        Increment Counter: {{ count }}
+      </button>
+    </div>
+
+    <script>
+        new Vue({
+          el: '#app-5',
+          data: {
+            count: 0
+          },
+          methods: {
+            updateCount: function() {
+              this.count += 1;
+            }
+          }
+        })
+    </script>
   </body>
 </html>
