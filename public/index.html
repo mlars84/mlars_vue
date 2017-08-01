@@ -4,15 +4,25 @@
     <meta charset="utf-8">
     <title>Mlars Vue.js</title>
     <script src="https://unpkg.com/vue"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <div>
+      <nav>
+        <a class="navBar" href="#">Home</a>
+        <a class="navBar" href="#">About</a>
+        <a class="navBar" href="#">Contact</a>
+      </nav>
+    </div>
     <div id="app">
-      <p>{{ message }}</p>
+      <h1>{{ message }}</h1>
+
+      <textarea v-model="message"></textarea>
+
+      <pre>
+        {{ $data | json }}
+      </pre>
     </div>
     <script>
 
@@ -25,5 +35,30 @@
         data: data
       });
     </script>
+    <hr>
+    <div id="app-2">
+      <span v-bind:title="message">
+        Hover your mouse over me for a few seconds
+        to see my dynamically bound title!
+      </span>
+    </div>
+    <script>
+    var app2 = new Vue({
+      el: '#app-2',
+      data: {
+        message: 'You loaded this page on ' + new Date()
+      }
+    })
+    </script>
+    <hr>
+    <div id="app-3">
+      <form>
+        <span class="error">
+          You must enter a message
+        </span>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <button type="submit" name="button">Send Message</button>
+      </form>
+    </div>
   </body>
 </html>

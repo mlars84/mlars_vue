@@ -1,0 +1,21 @@
+.error {
+  color: red;
+}
+
+.navBar {
+  color: #a9d3be;
+  font-family: 'Maven Pro', sans-serif;
+}
+.navBar:hover {
+  color: black;
+}
+
+body {
+  background-image: url('http://www.planwallpaper.com/static/images/HD-Wallpapers1_FOSmVKg.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*background-size: cover;*/
+  background-blend-mode: lighten;
+  color: #a9d3be;
+  font-family: 'Maven Pro', sans-serif;
+}
