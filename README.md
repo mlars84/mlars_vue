@@ -20,3 +20,26 @@
   </pre>
 </div>
 ```
+
+- Event Handling:
+    - Function that increments a counter:
+```<div id="app-5">
+  <button type="submit" @click="updateCount">
+    Increment Counter: {{ count }}
+  </button>
+</div>
+
+<script>
+    new Vue({
+      el: '#app-5',
+      data: {
+        count: 0
+      },
+      methods: {
+        updateCount: function() {
+          this.count += 1;
+        }
+      }
+    })
+</script>
+```
