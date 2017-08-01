@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mlars Vue.js</title>
+    <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
     <nav>
@@ -10,9 +11,19 @@
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-    <img src="assets/vue.png" alt="">
     <div id="app">
       <p>{{ message }}</p>
     </div>
+    <script>
+
+      var data = {
+        message: 'Hello World'
+      }
+
+      new Vue({
+        el: '#app',
+        data: data
+      });
+    </script>
   </body>
 </html>
