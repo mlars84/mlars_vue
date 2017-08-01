@@ -10,8 +10,12 @@
   "author": "Matthew Larson",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "body-parser": "^1.17.2",
+    "chai": "^4.1.0",
     "express": "^4.15.3",
+    "karma": "^1.7.0",
+    "mocha": "^3.5.0",
     "vue": "^2.4.2"
   }
 }

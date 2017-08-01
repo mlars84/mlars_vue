@@ -5,4 +5,4 @@
 - $npm install
 
 ## Built With
-- Vue.js, HTML5, Node.js, Babel
+- Vue.js, HTML5, Node.js, Express.js, Babel, karma
